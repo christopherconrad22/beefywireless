@@ -5,6 +5,7 @@
 
 import hashlib
 import getpass
+import base91
 
 pswd1 = getpass.getpass('Enter the wireless PW you wish to secure:')
 hash1 = hashlib.sha512(pswd1).hexdigest()
@@ -23,9 +24,9 @@ while hash1 != hash2:
 	hash2 = hashlib.sha512(pswd2).hexdigest()
 	pswd2 = None
 
-concatenated_pw = hash1[0:63]
+encoded_pw = base91.encode(hash1)
 hash1 = None
 hash2 = None
-print("Your new password: " + concatenated_pw)
-concatenated_pw = None
+print("Your new password: " + encoded_pw[0:63])
+encoded_pw = None
 
