@@ -1,4 +1,3 @@
-Simple script that takes a password of any length, hashes it using SHA512, encodes it using Base91 encoding, then shortens it to 63 characters which is the maximum password length for WPA wireless encryption.
+BeefyWireless by Chris Conrad
 
--Chris Conrad
-christopherconrad22@gmail.com
+Summary: BeefWireless generates a password using two user chosen salts, uses SHA512 to hash the salt + the user chosen password (8 characters or more), then encodes the resulting hash using Base91 and lastly truncates the final result down to 63 characters to fit into the WPA2 password field. 
