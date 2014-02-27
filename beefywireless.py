@@ -1,4 +1,4 @@
-# Beefywireless password
+# BeefyWireless password generator
 #
 # Copyright (c) 2014 Christopher Todd Conrad
 # All rights reserved.
