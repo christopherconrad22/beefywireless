@@ -1,5 +1,6 @@
 #	Chris Conrad 2/25/2014
 #	Simple script to hash a password using SHA512
+#	encode using Base91 encoding
 #	and to shorten to 63 characters for maximum
 #	length using WPA wireless security
 
